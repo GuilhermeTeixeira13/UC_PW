@@ -14,41 +14,52 @@
 
     <div id="menu">
       <ul>
-        <li><a href="#">Aprender HTML</a></li>
-        <li><a href="#">Tutoriais</a></li>
-        <li><a href="#">Dicas</a></li>
-        <li><a href="#">Contacte-nos</a></li>
+        <li>Aprender HTML</li>
+        <li>Tutoriais</li>
+        <li>Dicas</li>
+        <li>Contacte-nos</li>
       </ul>
     </div>
 
     <article>
       <table>
         <tr>
-          <td>
-            <div>
-              <h2>Aprender HTML</h2>
-              <p>Desenvolvimento de uma página HTML.</p>
-              <p>
-                Siga as dicas abaixo indicadas para a construção deste website.
-              </p>
-              <img
-                src="img/livro.png"
-                height="auto"
-                width="5%"
-                id="imagem-principal"
-              />
-            </div>
+          <td id="aprender-html">
+            <table>
+              <td id="primeira-coluna-tabela-aprender">
+                <h2>Aprender HTML</h2>
+                <img
+                  src="img/livro.png"
+                  height="170px"
+                  width="220px"
+                  id="imagem-principal"
+                />
+                <td id="segunda-coluna-tabela-aprender">
+                <p>Desenvolvimento de uma página HTML.</p>
+                <p>
+                  Siga as dicas abaixo indicadas para a construção deste
+                  website.
+                </p>
+              </td>
+              </td>
+            </table>
           </td>
-          <td>
+          <td height="100%" width="30%" rowspan="2" id="tutoriais">
             <h2>Tutoriais de HTML</h2>
-            <iframe
+            <iframe id="tutorial-1" width="100%" height="400px"
               src="https://www.youtube.com/embed/9-QavhHyfkk"
               title="How to Code in HTML and CSS in 2 Hours"
             ></iframe>
+            <div>
+              <iframe id="tutorial-2" width="100%" height="400px"
+                src="https://www.youtube.com/embed/y3UH2gAhwPI"
+                title="HTML and CSS Tutorial for Beginners | The Ultimate guide to learning HTML and CSS"
+              ></iframe>
+            </div>
           </td>
         </tr>
         <tr>
-          <td style="width: 70%">
+          <td id="dicas-html" style="width: 70%">
             <div>
               <h2>Dicas HTML</h2>
               <ul>
@@ -97,20 +108,15 @@
               </ul>
             </div>
           </td>
-          <td>
-            <div>
-              <iframe
-                src="https://www.youtube.com/embed/y3UH2gAhwPI"
-                title="HTML and CSS Tutorial for Beginners | The Ultimate guide to learning HTML and CSS"
-              ></iframe>
-            </div>
+          <td id="terceira-casa">
           </td>
         </tr>
       </table>
 
       <div id="contacte">
         <h2>Contacte-nos</h2>
-        <p>Envie-nos a sua dúvida ou sugestão</p>
+        <p><strong>Envie-nos a sua dúvida ou sugestão</strong></p>
+        <br />
         <form>
           <label for="name">Nome</label><br /><br />
           <input
@@ -120,6 +126,7 @@
             name="name"
             class="form-input"
           /><br /><br />
+
           <label for="email">Email</label><br /><br />
           <input
             type="email"
@@ -128,6 +135,7 @@
             name="email"
             class="form-input"
           /><br /><br />
+
           <label for="phone">Telemóvel</label><br /><br />
           <input
             type="number"
@@ -136,9 +144,11 @@
             name="phone"
             class="form-input"
           /><br /><br />
+
           <label for="msg">Mensagem</label><br /><br />
           <input type="text" placeholder="Indique-nos a sua dúvida" id="msg"
           name="msg" class="form-input"" /><br /><br />
+
           <label for="reason">Qual é a razão do seu contacto?</label
           ><br /><br />
           <select name="reasons" class="form-input">
@@ -146,6 +156,7 @@
               Pedido de Informação
             </option></select
           ><br /><br />
+
           <label for="contactsChice">Como prefere ser contactado?</label
           ><br /><br />
           <input
@@ -156,12 +167,16 @@
             checked
           />
           <label for="email">Telemóvel</label><br />
+
           <input type="checkbox" id="email" name="email" value="email" />
           <label for="email">Email</label><br />
+
           <label for="contactDate">Data de Contacto</label>
           <input type="date" id="contactDate" name="contactDate" />
           <br /><br />
+
           <input type="submit" value="Submeter" />
+
           <input type="reset" value="Cancelar" />
         </form>
       </div>

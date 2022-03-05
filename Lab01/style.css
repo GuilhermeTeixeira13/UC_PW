@@ -1,11 +1,53 @@
+body {
+  font-family: sans-serif;
+}
+
 table {
   border: none;
+}
+
+h2 {
+  font-size: 22pt;
+  text-decoration: strong;
 }
 
 #menu ul li {
   display: inline;
   list-style-type: none;
   text-decoration: none;
+  color: white;
+  padding-right: 25px;
+}
+
+#menu {
+  background-color: rgb(56, 56, 56);
+  height: 40px;
+}
+
+#menu ul {
+  padding-top: 5px;
+}
+
+#aprender-html {
+  padding-top: 25px;
+}
+
+#primeira-coluna-tabela-aprender {
+  padding-bottom: 110px;
+}
+
+#segunda-coluna-tabela-aprender p {
+  line-height: 0.4;
+  font-size: 11pt;
+}
+
+#dicas-html {
+  padding-bottom: 50px;
+}
+
+#tutoriais {
+  vertical-align: top;
+  padding-left: 20px;
 }
 
 #contacte {
@@ -29,5 +71,5 @@ table {
 
 footer {
   height: 75px;
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(56, 56, 56);
 }
