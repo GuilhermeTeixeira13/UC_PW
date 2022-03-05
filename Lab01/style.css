@@ -1,0 +1,33 @@
+table {
+  border: none;
+}
+
+#menu ul li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#contacte {
+  background-color: whitesmoke;
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-input {
+  width: 40%;
+  line-height: 30px;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+}
+
+footer {
+  height: 75px;
+  background-color: rgb(16, 16, 16);
+}
