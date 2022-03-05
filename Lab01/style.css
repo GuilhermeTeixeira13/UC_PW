@@ -1,5 +1,8 @@
 body {
   font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 table {
@@ -16,7 +19,7 @@ h2 {
   list-style-type: none;
   text-decoration: none;
   color: white;
-  padding-right: 25px;
+  padding-right: 40px;
 }
 
 #menu {
@@ -26,6 +29,7 @@ h2 {
 
 #menu ul {
   padding-top: 5px;
+  padding-left: 80px;
 }
 
 #aprender-html {
@@ -33,7 +37,7 @@ h2 {
 }
 
 #primeira-coluna-tabela-aprender {
-  padding-bottom: 110px;
+  padding-bottom: 50px;
 }
 
 #segunda-coluna-tabela-aprender p {
@@ -42,7 +46,7 @@ h2 {
 }
 
 #dicas-html {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 #tutoriais {
@@ -60,16 +64,32 @@ h2 {
 .form-input {
   width: 40%;
   line-height: 30px;
+  box-sizing: border-box;
 }
 
-#copyright {
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 75px;
+#msg {
+  width: 40%;
+  line-height: 30px;
+  box-sizing: border-box;
+  height: 170px;
+}
+
+#msg-box {
+  width: 40%;
+  line-height: 30px;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+input[type="text"]::placeholder {
+  text-align: left; /* for Chrome, Firefox, Opera */
+  position: absolute;
 }
 
 footer {
   height: 75px;
   background-color: rgb(56, 56, 56);
+  text-align: center;
+  padding-top: 20px;
+  color: white;
 }
