@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="exc2.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exc2</title>
+  </head>
+  <body>
+    <h1>Formulário Universitário</h1>
+    <form>
+      <label for="nome-aluno">Nome do aluno</label><br />
+      <input type="text" placeholder="Nome do aluno:" id="nome-aluno" name="msg"
+      class="form-input"" /><br /><br />
+
+      <label for="distrito">Distrito de Proveniência:</label><br />
+      <select name="reasons" class="form-input">
+        <option name="Castelo-Branco">Castelo Branco</option>
+        <option name="Lisboa">Lisboa</option>
+        <option name="Santarem">Santarém</option>
+      </select>
+      <br /><br />
+
+      <label for="Genero">Género:</label><br />
+      <input type="radio" id="masculino" name="masculino" value="M" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="feminino" name="feminino" value="F" />
+      <label for="feminino">Feminino</label><br /><br />
+
+      <label for="morada">Morada:</label><br />
+      <input type="text" placeholder="Insira a sua morada" id="morada"
+      name="morada" class="form-input"" /><br /><br />
+
+      <label for="cod-postal">Código Postal:</label><br />
+      <input
+        type="text"
+        id="postalCode"
+        placeholder="0000-000"
+        pattern="^\d{4}-\d{3}?$"
+      /><br /><br />
+
+      <label for="contactDate">Data de Nascimento:</label>
+      <input type="date" id="contactDate" name="contactDate" />
+      <br /><br />
+
+      <label for="regime-ingresso">Regime de Ingresso:</label><br />
+      <select name="regime-ingresso" class="form-input">
+        <option name="regime-geral">Regime Geral</option>
+        <option name="maiores-23">Maiores de 23 anos</option>
+        <option name="titulares-CET">Titular de CET</option>
+        <option name="transferencia">Transferência</option>
+        <option name="mudanca-curso">Mudança de Curso</option>
+        <option name="ano-zero">Ano Zero</option>
+        <option name="curso-livre">Curso Livre</option>
+      </select>
+      <br /><br />
+
+      <label for="opcao">Primeira Opção:</label><br />
+      <input type="radio" id="sim" name="sim" value="S" />
+      <label for="sim">Sim</label>
+      <input type="radio" id="nao" name="nao" value="N" />
+      <label for="nao">Não</label><br /><br />
+
+      <input type="submit" value="Submeter" />
+      <input type="reset" value="Cancelar" />
+    </form>
+  </body>
+</html>

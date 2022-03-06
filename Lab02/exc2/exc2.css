@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  width: 80%;
+}
+
+form {
+  width: 80%;
+  border-top: 2px solid rgb(60, 197, 202);
+  border-bottom: 2px solid rgb(60, 197, 202);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: large;
+}
+
+.form-input {
+  width: 100%;
+}
