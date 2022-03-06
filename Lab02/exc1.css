@@ -1,3 +1,7 @@
+body {
+  font-size: 12pt;
+}
+
 #tabela-principal {
   width: 40% !important;
   height: 300px !important;
@@ -50,6 +54,18 @@ input[type="text"] {
   float: left;
 }
 
+.form-input {
+  float: left;
+}
+
+#tipo-1-caixa {
+  float: left;
+}
+
+#tipo-2-caixa {
+  float: left;
+}
+
 /*Dúvidas:
   - preenchimento de célula da tabela interior de quatro unidades;
-*/
+*/ ;
