@@ -1,0 +1,55 @@
+#tabela-principal {
+  width: 40% !important;
+  height: 300px !important;
+  table-layout: fixed;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#tabela-principal td {
+  width: 11.11%;
+  height: 10%;
+  text-align: center;
+}
+
+#tabela-principal td:nth-child(1) {
+  width: 4.5%;
+}
+
+#tabela-principal td:nth-child(11) {
+  width: 4.5%;
+}
+
+#tabela-secundaria {
+  width: 95% !important;
+}
+
+#tabela-principal td img {
+  width: 30px;
+  height: 90px;
+}
+
+input[type="text"] {
+  width: 75%;
+  float: left;
+}
+
+#qtd {
+  float: right;
+}
+
+#A {
+  float: left;
+}
+
+#B {
+  float: left;
+}
+
+#C {
+  float: left;
+}
+
+/*Dúvidas:
+  - preenchimento de célula da tabela interior de quatro unidades;
+*/
