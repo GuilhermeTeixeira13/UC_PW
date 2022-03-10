@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="exc2.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartão WTF</title>
+    <style>
+      body {
+        font-family: Calibri;
+      }
+
+      h1 {
+        color: #ff3399;
+      }
+
+      fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+      }
+
+      #formaContacto {
+        font-size: 13px;
+        float: right;
+      }
+
+      #submitCancel {
+        float: right;
+      }
+
+      form {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adesão Cartão WTF</h1>
+    <form>
+
+      <fieldset>
+        <legend><strong>Dados Pessoais</strong></legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="msg" class="form-input"" /><br /><br />
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="masculino" name="masculino" value="M" checked />
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="feminino" value="F" />
+        <label for="feminino">Feminino</label><br /><br />
+
+        <label for="contactDate">Data de Nascimento:</label>
+        <input type="date" id="contactDate" name="contactDate" />
+        <br /><br />
+
+        <label for="estado-civil">Estado Civil:</label>
+        <select name="estado-civil class="form-input">
+          <option value="" disabled selected>Escolha a sua opção</option>
+          <option name="casado">Casado</option>
+          <option name="solteiro">Solteiro</option>
+          <option name="divorciado">Divorciado</option>
+          <option name="divorcio">Viúvo</option>
+        </select>
+        <br />
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend><strong>Contactos:</strong></legend>
+
+        <label for="cod-postal">Código Postal:</label><br />
+        <input
+          type="text"
+          id="postalCode"
+          placeholder="0000"
+          pattern="^\d{4}$"
+        />
+        -
+        <input
+          type="text"
+          id="postalCode"
+          placeholder="000"
+          pattern="^\d{3}$"
+        />
+        <br><br>
+
+        <label for="morada">Morada:</label><br />
+        <input type="text" id="morada"
+        name="morada" class="form-input"" /><br /><br />
+
+        <label for="nome">Email:</label>
+        <input type="text" id="nome" placeholder="ex:alguem@gmail.com" name="msg" class="form-input"" /><br /><br />
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" class="form-input"" /><br />
+
+      </fieldset>
+
+      <div id="formaContacto">
+      Pretendo ser contactado através de:
+      <input
+        type="checkbox"
+        id="email"
+        name="email"
+        value="email"
+      />
+      <label for="contactsChoice">Email</label>
+
+      <input
+        type="checkbox"
+        id="phone"
+        name="phone"
+        value="phone"
+      />
+      <label for="contactsChoice">Telemóvel</label>
+
+      <input
+        type="checkbox"
+        id="correio"
+        name="correio"
+        value="correio"
+      />
+      <label for="contactsChoice">Correio</label>
+      </div>
+      <br>
+      <div id="submitCancel">
+        <input type="submit" value="Submeter" />
+        <input type="reset" value="Cancelar" />
+      </div>
+    </form>
+  </body>
+</html>
