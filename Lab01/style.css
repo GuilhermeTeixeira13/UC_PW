@@ -74,13 +74,6 @@ h2 {
   height: 170px;
 }
 
-#msg-box {
-  width: 40%;
-  line-height: 30px;
-  box-sizing: border-box;
-  height: 100px;
-}
-
 input[type="text"]::placeholder {
   text-align: left; /* for Chrome, Firefox, Opera */
   position: absolute;

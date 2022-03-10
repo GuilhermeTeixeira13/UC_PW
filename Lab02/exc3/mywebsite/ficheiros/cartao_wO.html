@@ -13,6 +13,7 @@
 
       h1 {
         color: #ff3399;
+        margin-top: 0px;
       }
 
       fieldset {
@@ -39,8 +40,23 @@
         float: right;
       }
 
-      form {
+      #morada {
+        width: 90%;
+        line-height: 30px;
+        box-sizing: border-box;
+        height: 100px;
+      }
+
+      #postalCode {
+        width: 50px;
+      }
+
+      #nome {
         width: 80%;
+      }
+
+      form {
+        width: 70%;
       }
     </style>
   </head>
@@ -49,7 +65,7 @@
     <form>
 
       <fieldset>
-        <legend><strong>Dados Pessoais</strong></legend>
+        <legend><strong>Dados pessoais:</strong></legend>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="msg" class="form-input"" /><br /><br />
 
@@ -71,13 +87,16 @@
           <option name="divorciado">Divorciado</option>
           <option name="divorcio">Viúvo</option>
         </select>
+
+        <label for="nr/filhos">&nbsp;Nr de filhos:</label>
+        <input type="number" name="n_filhos" min="0" max="5" value="0"> 
         <br />
       </fieldset>
       <br><br>
       <fieldset>
         <legend><strong>Contactos:</strong></legend>
 
-        <label for="cod-postal">Código Postal:</label><br />
+        <label for="cod-postal">Código Postal:</label>
         <input
           type="text"
           id="postalCode"
@@ -106,7 +125,7 @@
       </fieldset>
 
       <div id="formaContacto">
-      Pretendo ser contactado através de:
+      <i>Pretendo ser contactado através de:</i>
       <input
         type="checkbox"
         id="email"
@@ -133,8 +152,8 @@
       </div>
       <br>
       <div id="submitCancel">
-        <input type="submit" value="Submeter" />
-        <input type="reset" value="Cancelar" />
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Confirmar" />
       </div>
     </form>
   </body>
