@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(105, 105, 105);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+form {
+  background-color: rgb(245, 245, 245);
+  margin-top: -10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 560px;
+  border-radius: 1%;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-top: 30px;
+}
+
+.form-input,
+select {
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+#msg {
+  height: 110px;
+}
+
+input[type="text"]::placeholder {
+  text-align: left; /* for Chrome, Firefox, Opera */
+  position: absolute;
+}
+
+input[type="submit"] {
+  background-color: rgb(64, 224, 208);
+  border: 0px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8%;
+  margin-top: 10px;
+}
