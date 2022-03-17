@@ -1,0 +1,45 @@
+body {
+  font-family: Times;
+  font-size: 14px;
+  color: #222;
+  margin: auto;
+  width: 60%;
+}
+
+header {
+  background-color: #a60015;
+  color: whitesmoke;
+}
+
+article {
+  text-align: justify;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px gray solid;
+}
+
+.principal p {
+  font-style: italic;
+}
+
+.princial div p {
+  font-style: normal;
+}
+
+.principal div p .autor {
+  /*color: #tititi;*/
+  font-size: 11px;
+  font-family: Helvetica;
+  font-style: italic;
+}
+
+section article:nth-child(2) p {
+  text-align: justify;
+  margin-left: 55%;
+}
+
+section article:nth-child(3) p {
+  text-align: justify;
+  margin-left: 55%;
+}
