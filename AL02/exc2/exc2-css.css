@@ -5,6 +5,7 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 #cabecalho {
@@ -13,6 +14,7 @@
 
 #cabecalho h1 {
   color: #c60;
+  font-weight: bold;
 }
 
 nav {
@@ -32,4 +34,130 @@ nav a {
 nav a:hover {
   color: orange;
   text-decoration: underline;
+}
+
+#menu {
+  padding: 0;
+  font-size: 0.9em;
+  width: 20%;
+  display: inline-block;
+}
+
+#menu #favorites {
+  padding: 5px;
+  margin-top: 1em;
+  background-color: #f8f8f8;
+  border: 1px solid #c5c5c5;
+}
+
+#menu #favorites p {
+  color: #999;
+  margin-left: 7px;
+  margin-bottom: 0;
+}
+
+#links-favoritos {
+  color: -webkit-link;
+  margin-bottom: 10px;
+  margin-left: 7px;
+}
+
+#menu #grupos {
+  padding: 5px;
+  margin-top: 0.5em;
+  background-color: #fff6cd;
+  border: 1px dashed #c60;
+  display: grid;
+  padding-left: 0;
+}
+
+#menu #grupos h3,
+#menu #favorites h3 {
+  color: #036;
+  padding-left: 7px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#menu #grupos a {
+  color: #c60;
+  margin: 7px;
+}
+
+.material-icons {
+  color: black;
+  padding-right: 10px;
+}
+
+#conteudo {
+  display: inline-block;
+  width: 80%;
+  float: right;
+}
+
+#principal {
+  float: left;
+  width: 73%;
+}
+
+#principal article h2,
+#principal article a {
+  color: #c60;
+}
+
+#principal article {
+  margin-bottom: 1em;
+  margin-left: 25px;
+}
+
+#principal article p {
+  text-align: justify;
+}
+
+#principal article h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#secundario {
+  float: right;
+  width: 22%;
+}
+
+#secundario h2 {
+  background-color: #db905c;
+  color: #fff;
+  padding: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#secundario p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#secundario p a {
+  color: -webkit-link;
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0;
+  padding-right: 0;
+  border: 1px solid #c5c5c5;
+  background-color: #f8f8f8;
+  font-size: 0.8em;
+}
+
+footer p {
+  text-align: right;
 }
