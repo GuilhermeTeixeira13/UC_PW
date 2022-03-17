@@ -1,14 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Times;
-  font-size: 14px;
+  font-size: 13px;
   color: #222;
   margin: auto;
-  width: 60%;
+  width: 50%;
+}
+
+img {
+  width: 50%;
+  margin: 0;
+  float: left;
 }
 
 header {
   background-color: #a60015;
   color: whitesmoke;
+}
+
+nav a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+nav {
+  padding-top: 17px;
 }
 
 article {
@@ -17,14 +38,19 @@ article {
   width: 100%;
   padding: 10px;
   border-bottom: 1px gray solid;
+  padding-left: 0px;
 }
 
 .principal p {
   font-style: italic;
+  font-size: 14px;
+  font-family: Georgia, serif;
 }
 
-.princial div p {
+.principal div p {
   font-style: normal;
+  font-size: 12px;
+  margin-bottom: 15px;
 }
 
 .principal div p .autor {
@@ -34,12 +60,70 @@ article {
   font-style: italic;
 }
 
-section article:nth-child(2) p {
-  text-align: justify;
-  margin-left: 55%;
+.principal img {
+  width: 100%;
+  margin-top: 10px;
 }
 
+.principal h2 {
+  font-size: 30px;
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+
+section article:nth-child(2) p,
 section article:nth-child(3) p {
   text-align: justify;
   margin-left: 55%;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+section article:nth-child(2) h2,
+section article:nth-child(3) h2 {
+  margin-left: 55%;
+}
+
+section article:nth-child(2) p a,
+section article:nth-child(3) p a {
+  font-family: Times;
+  font-size: 13px;
+  color: orangered;
+}
+
+section article:nth-child(2) p .especial {
+  color: rgba(24, 24, 192, 0.514);
+}
+
+.label {
+  text-transform: uppercase;
+  padding: 1px 4px 2px;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+  color: red;
+  font-style: normal;
+}
+
+.label.actual {
+  background-color: #a60015;
+  color: white;
+}
+
+#scandal {
+  background-color: rgba(223, 220, 217, 0.952);
+}
+
+section p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section p .contacts .instagram {
+  color: rgba(24, 24, 192, 0.514);
+  font-family: sans-serif;
+}
+
+section p a {
+  color: rgba(24, 24, 192, 0.514);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
