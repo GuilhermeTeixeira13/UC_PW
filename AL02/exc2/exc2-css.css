@@ -1,0 +1,35 @@
+#exterior {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cabecalho {
+  padding: 0.5em;
+}
+
+#cabecalho h1 {
+  color: #c60;
+}
+
+nav {
+  background-color: #4286f4;
+  padding-top: 0.2em;
+  padding-bottom: 00.2em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav a {
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: orange;
+  text-decoration: underline;
+}
