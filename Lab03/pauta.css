@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h2 {
+  color: rgb(105, 105, 105);
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: rgba(105, 105, 105, 0.7);
+  font-weight: bold;
+}
+
+#aluno {
+  background-color: rgb(245, 245, 245);
+  padding-top: 20px;
+  padding-left: 20px;
+  border: 2px solid rgb(207, 207, 207);
+}
+
+table {
+  background-color: rgb(211, 211, 211);
+  border-color: rgb(160, 160, 160);
+}
+
+table tr:nth-child(3) {
+  background-color: blue;
+  color: white;
+}
+
+.aprovado,
+.reprovado {
+  color: black;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  font-weight: bold;
+  background-color: rgb(0, 128, 0);
+}
+
+.reprovado {
+  background-color: rgb(255, 0, 0);
+}
