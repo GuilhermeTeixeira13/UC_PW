@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idealmed>
+  <doutor nome="Marcelo Pereira">
+    <sexo sexo="M">
+      <paciente id="4">
+        <name>Miguel Antunes</name>
+        <anoNascimento>2007</anoNascimento>
+        <bi>29878167</bi>
+        <contribuinte>298716726</contribuinte>
+        <sistemaSaude>Multicare</sistemaSaude>
+      </paciente>
+    </sexo>
+  </doutor>
+  <doutor nome="Josefina Fontes">
+    <sexo sexo="F">
+      <paciente id="6">
+        <name>Juliana Mendes</name>
+        <anoNascimento>2010</anoNascimento>
+        <bi>39817623</bi>
+        <contribuinte>287676543</contribuinte>
+        <sistemaSaude>Médis</sistemaSaude>
+      </paciente>
+    </sexo> 
+  </doutor>
+</idealmed>
