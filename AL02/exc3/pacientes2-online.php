@@ -37,7 +37,7 @@
         }     
     }
     echo "</table>";
-    $xml->asXML('pacientes2final.xml');
+    $xml->asXML('pacientes2doutores.xml');
   ?>
 </body>
 </html>
