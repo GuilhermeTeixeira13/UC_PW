@@ -10,7 +10,7 @@
 <body>
   <?php 
     $xml = simplexml_load_file("pacientes2.xml");
-    echo "<h2>Pacientes</h2><br />";
+    echo "<h2>Pacientes2</h2><br />";
 
     echo "<table border='1'>";
     echo "<tr><td>ID</td><td>Sexo</td><td>Nome</td><td>Ano Nascimento</td><td>BI</td><td>Contribuinte</td><td>Sistema de Saúde</td><td>Doutor</td></tr>";
