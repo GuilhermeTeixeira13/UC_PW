@@ -18,8 +18,11 @@ var lakshmana = $('#lakshmana');
 
 $('.character').hide();
 $('.right').prepend("<p>Roll over a character's name to learn more.</p>");
-
-
+$('.name').mouseover(
+  function(){
+    rama.show(); 
+  }
+)
 
 // ----------------------------------------------------------------------------
 }); // do not delete
