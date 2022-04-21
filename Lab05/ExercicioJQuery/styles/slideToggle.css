@@ -6,7 +6,10 @@ h1, h2, p {
 
 p {
 	margin-bottom: 0;
-	padding: 20px;
+	padding: 0px;
+	max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 	}
 
 h2 {
