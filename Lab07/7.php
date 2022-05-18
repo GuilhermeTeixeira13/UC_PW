@@ -2,34 +2,34 @@
 
 // Abra a base de dados como objeto PDO (ou com a extensão mysqli se preferir)
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "root";
+$password = "";
 
-$exercisedb = new mysqli($servername, $username, $password);
+$exercisedb = new mysqli($servername, $username, $password, "segunda");
 if ($exercisedb->connect_error) {
   die("Connection failed: " . $exercisedb->connect_error);
 }
 
-echo "Connected successfully";
+echo "Connected successfully\n";
 
 
 $criar = "CREATE TABLE Users (Id INTEGER PRIMARY KEY, Username VARCHAR(100), PASSWORD_HASH VARCHAR(40), EMAIL VARCHAR(20))";
 if ($exercisedb->query($criar) === TRUE) {
-  echo "Table created successfully";
+  echo "Table created successfully\n";
 } else {
   echo "Error: " . $criar . "<br>" . $exercisedb->error;
 }
 
 
 $inserirDados = "INSERT INTO Users (Username, PASSWORD_HASH, EMAIL)
-VALUES ('Guilherme', '123', 'guilhermeteixeira1313@gmail.com')";
-mysqli_query($conn, $inserirDados);
+VALUES ('Guilherme', '123', 'gui@gmail.com')";
+mysqli_query($exercisedb, $inserirDados);
 
 
 $getData = "SELECT Username, PASSWORD_HASH, EMAIL FROM Users";
-$result = $conn->query($getData);
+$result = $exercisedb->query($getData);
 if ($result->num_rows > 0) {
-  echo "<table>";
+  echo "<table border='1'>";
   while($row = $result->fetch_assoc()) {
     echo "<tr><td>" . $row["Username"]. "</td><td>" . $row["PASSWORD_HASH"]. "</td><td>" . $row["EMAIL"]. "</td></tr>";
   }
