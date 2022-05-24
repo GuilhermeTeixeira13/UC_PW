@@ -1,0 +1,43 @@
+Para ler todos os posts publicados:
+http://localhost/AL05/api/post/read.php
+
+Para ler um id específico de um determinado POST:
+http://localhost/AL05/api/post/read_single.php?id=2
+
+Para criar um novo Post:
+1 - Change to POST
+2 - http://localhost/AL05/api/post/create.php
+3 - Em Headers: Key->Content-Type / Value->application/json
+4 - Body -> Raw
+5 - {
+    "title": "My Tech Post",
+    "body": "This is a sample post",
+    "author": "Brad Traversy",
+    "category_id": "1"
+}
+6 - Send
+7 - Read para ver o conteúdo adicionado
+
+Para dar update a um post:
+1 - Mudar para PUT
+2 - http://localhost/AL05/api/post/update.php
+3 - Em Headers: Key->Content-Type / Value->application/json
+4 - Body -> Raw
+5 - {
+    "title": "Updated Post",
+    "body": "This is an Updated Post",
+    "author": "Brad Traversy",
+    "category_id": "1",
+    "id": "4"
+}
+6 - Send
+7 - Read para ver o conteúdo updated
+
+Para dar delete:
+1 - Mudar para DELETE
+2 - http://localhost/AL05/api/post/delete.php
+3 - {
+    "id": "7"
+}
+4 - Send
+5 - Read para ver o conteúdo deleted
